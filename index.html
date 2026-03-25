@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soniq | Video Editor & Graphic Designer</title>
+    <meta name="description" content="Portfolio of a creative Video Editor and Graphic Designer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">JITHIN<span> V</span></div>
+        <div class="small-caption">
+            <VideoEditor></VideoEditor></Video><span> V</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#work" class="nav-link">Work</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link btn">Let's Talk</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="line"><span class="word">CRAFTING</span></span>
+                <span class="line"><span class="word highlight">VISUAL</span></span>
+                <span class="line"><span class="word">STORIES</span></span>
+            </h1>
+            <p class="hero-subtitle">Video Editor & Graphic Designer bringing ideas to life through motion and pixels.
+            </p>
+            <div class="hero-actions">
+                <a href="#work" class="primary-btn">View My Reel <span class="arrow">↓</span></a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="abstract-shape shape-1"></div>
+            <div class="abstract-shape shape-2"></div>
+            <div class="abstract-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Marquee Banner -->
+    <div class="marquee-container">
+        <div class="marquee">
+            <span>VIDEO EDITING • GRAPHIC DESIGN • COLOR GRADING </span>
+            <span>VIDEO EDITING • GRAPHIC DESIGN • COLOR GRADING </span>
+            <span>VIDEO EDITING • GRAPHIC DESIGN • COLOR GRADING </span>
+        </div>
+    </div>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="section-header">
+            <h2>FEATURED <span class="highlight">PROJECTS</span></h2>
+            <p>A selection of my recent works across editing and design.</p>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-card" id="open-videos">
+                <div class="project-img">
+                    <div class="overlay"></div>
+                    <video src="assets/REELS/.1final.mp4" autoplay loop muted playsinline></video>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">8 Projects</span>
+                    <h3 class="project-title">VIDEOS</h3>
+                </div>
+            </div>
+
+            <div class="project-card" id="open-posters">
+                <div class="project-img">
+                    <div class="overlay"></div>
+                    <img src="assets/POSTERS/1.jpg" alt="Posters">
+                </div>
+                <div class="project-info">
+                    <span class="project-category">11 Projects</span>
+                    <h3 class="project-title">POSTERS</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-nav lightbox-prev">&#10094;</button>
+        <div class="lightbox-content" id="lightbox-content">
+            <!-- Media injected via JS -->
+        </div>
+        <button class="lightbox-nav lightbox-next">&#10095;</button>
+        <div class="lightbox-counter" id="lightbox-counter">1 / 10</div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>I EDIT SO YOU DON'T <span class="highlight">HAVE TO.</span></h2>
+                <p>With over 1 years of experience in the creative industry, I've developed a keen eye for detail and a
+                    deep understanding of rhythm in both static designs and dynamic videos.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10k+</span>
+                        <span class="stat-label">Views Generated</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2 class="contact-title">READY TO CREATE <br><span class="highlight">SOMETHING EPIC?</span></h2>
+            <a href="mailto:hello@example.com" class="small-email">jithinmanesh.org@gmail.com</a>
+            <div class="social-links">
+                <a href="https://www.instagram.com/fly.in___/" target="_blank" class="social-link">Instagram</a>
+                <a href="https://www.linkedin.com/in/jithin-v-connectwithme/" target="_blank"
+                    class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jithin. All rights reserved.</p>
+        <p class="scroll-top" id="scrollTop">Back to Top ↑</p>
+    </footer>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- VanillaTilt for 3D Rollover Cards -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
